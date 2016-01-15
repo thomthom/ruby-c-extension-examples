@@ -1,4 +1,4 @@
 LIBRARY
 
 EXPORTS
-    Init_SUEX_HelloWorld
+    Init_Empty

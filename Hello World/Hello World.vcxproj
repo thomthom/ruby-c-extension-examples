@@ -152,42 +152,50 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.so</TargetExt>
+    <TargetName>Empty</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|x64'">
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.so</TargetExt>
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <TargetName>Empty</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (1.8)|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.so</TargetExt>
+    <TargetName>Empty</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug (1.8)|x64'">
     <LinkIncremental>true</LinkIncremental>
     <TargetExt>.so</TargetExt>
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <TargetName>Empty</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.so</TargetExt>
+    <TargetName>Empty</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (2.0)|x64'">
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.so</TargetExt>
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <TargetName>Empty</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (1.8)|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.so</TargetExt>
+    <TargetName>Empty</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release (1.8)|x64'">
     <LinkIncremental>false</LinkIncremental>
     <TargetExt>.so</TargetExt>
     <OutDir>$(SolutionDir)\$(Configuration)\$(Platform)\</OutDir>
     <IntDir>$(Configuration)\$(Platform)\</IntDir>
+    <TargetName>Empty</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug (2.0)|Win32'">
     <ClCompile>
