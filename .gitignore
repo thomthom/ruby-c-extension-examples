@@ -19,3 +19,5 @@ SUEX_UsingSWIG/src/Swig_output.*
 Debug/
 Release/
 !ThirdParty/bin/win32/swig/*.*
+
+test_package/build
