@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SUEX_HelloWorld", "Hello World\Hello World.vcxproj", "{25BA2DB4-7E96-4095-89F9-CBA14FB0EC52}"
 EndProject
@@ -51,7 +51,6 @@ Global
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Debug (2.0)|x64.Build.0 = Debug (2.0)|x64
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Debug (2.2)|Win32.ActiveCfg = Debug (2.2)|Win32
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Debug (2.2)|x64.ActiveCfg = Debug (2.2)|x64
-		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Debug (2.2)|x64.Build.0 = Debug (2.2)|x64
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Release (1.8)|Win32.ActiveCfg = Release (2.0)|Win32
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Release (1.8)|x64.ActiveCfg = Release (2.0)|x64
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Release (2.0)|Win32.ActiveCfg = Release (2.0)|Win32
@@ -60,9 +59,11 @@ Global
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Release (2.0)|x64.Build.0 = Release (2.0)|x64
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Release (2.2)|Win32.ActiveCfg = Release (2.2)|Win32
 		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Release (2.2)|x64.ActiveCfg = Release (2.2)|x64
-		{6BB18FFA-5E5C-4B51-B09C-2F0C009CF4E4}.Release (2.2)|x64.Build.0 = Release (2.2)|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6827711C-A166-4971-8750-A7C876831A8B}
 	EndGlobalSection
 EndGlobal

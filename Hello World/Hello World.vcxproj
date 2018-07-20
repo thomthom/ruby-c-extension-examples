@@ -344,13 +344,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\2.0\win32_x64;$(SolutionDir)ThirdParty\include\ruby\2.0\win32_x64\x64-mswin64_100;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\2.0\win32_x64;$(SolutionDir)ThirdParty\include\ruby\2.0\win32_x64\x64-mswin64_100;%(AdditionalIncludeDirectories);C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-14348\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
-      <AdditionalDependencies>x64-msvcrt-ruby200.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32;C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-14348\binaries\sketchup\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>x64-msvcrt-ruby200.lib;%(AdditionalDependencies);SketchUpAPI.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -368,13 +368,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\2.2\win32_x64;$(SolutionDir)ThirdParty\include\ruby\2.2\win32_x64\x64-mswin64_100;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\2.2\win32_x64;$(SolutionDir)ThirdParty\include\ruby\2.2\win32_x64\x64-mswin64_100;%(AdditionalIncludeDirectories);C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-18664\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
-      <AdditionalDependencies>x64-msvcrt-ruby220.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32;C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-18664\binaries\sketchup\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>x64-msvcrt-ruby220.lib;%(AdditionalDependencies);SketchUpAPI.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -416,13 +416,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\1.8\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\1.8\win32;%(AdditionalIncludeDirectories);C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-14348\headers</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
-      <AdditionalDependencies>msvcrt-ruby18.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32;C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-14348\binaries\sketchup\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>msvcrt-ruby18.lib;%(AdditionalDependencies);SketchUpAPI.lib</AdditionalDependencies>
     </Link>
     <Midl>
       <MkTypLibCompatible>false</MkTypLibCompatible>
@@ -501,7 +501,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\2.0\win32_x64;$(SolutionDir)ThirdParty\include\ruby\2.0\win32_x64\x64-mswin64_100;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\2.0\win32_x64;$(SolutionDir)ThirdParty\include\ruby\2.0\win32_x64\x64-mswin64_100;%(AdditionalIncludeDirectories);C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-14348\headers</AdditionalIncludeDirectories>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -510,8 +510,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
-      <AdditionalDependencies>x64-msvcrt-ruby200.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32;C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-14348\binaries\sketchup\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>x64-msvcrt-ruby200.lib;%(AdditionalDependencies);SketchUpAPI.lib</AdditionalDependencies>
       <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
     </Link>
     <Midl>
@@ -531,7 +531,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\2.2\win32_x64;$(SolutionDir)ThirdParty\include\ruby\2.2\win32_x64\x64-mswin64_100;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\2.2\win32_x64;$(SolutionDir)ThirdParty\include\ruby\2.2\win32_x64\x64-mswin64_100;%(AdditionalIncludeDirectories);C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-18664\headers</AdditionalIncludeDirectories>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -540,8 +540,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
-      <AdditionalDependencies>x64-msvcrt-ruby220.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32;C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-18664\binaries\sketchup\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>x64-msvcrt-ruby220.lib;%(AdditionalDependencies);SketchUpAPI.lib</AdditionalDependencies>
       <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
     </Link>
     <Midl>
@@ -591,7 +591,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\1.8\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)ThirdParty\include\ruby\1.8\win32;%(AdditionalIncludeDirectories);C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-14348\headers</AdditionalIncludeDirectories>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -600,8 +600,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32</AdditionalLibraryDirectories>
-      <AdditionalDependencies>msvcrt-ruby18.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)ThirdParty\lib\win32;C:\Users\tthomas2\SLAPI\SDK_Win_x64_18-0-14348\binaries\sketchup\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>msvcrt-ruby18.lib;%(AdditionalDependencies);SketchUpAPI.lib</AdditionalDependencies>
       <ModuleDefinitionFile>.\RubyExtension.def</ModuleDefinitionFile>
     </Link>
     <Midl>
