@@ -15,7 +15,9 @@ assert(SU_ERROR_NONE == su_api_result);\
 #define refute(condition) assert(!(condition))
 
 
+extern "C" {
 SU_RESULT SUApplicationGetActiveModel(SUModelRef* model);
+}
 
 
 std::string GetString(const SUStringRef& string) {
