@@ -7,30 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		339559611A0D798C00BB518A /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1590E61847A5A20084B06D /* Ruby.framework */; };
-		33CDE7B0182705EB00F7C6E8 /* SUEX_HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */; };
-		33CDE7B918270A4800F7C6E8 /* RubyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B618270A4800F7C6E8 /* RubyLib.h */; };
-		33CDE7BA18270A4800F7C6E8 /* RubyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */; };
-		33CDE7BB18270A4800F7C6E8 /* RubyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B818270A4800F7C6E8 /* RubyUtils.h */; };
-		CE1590E91847A5F10084B06D /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1590E81847A5F10084B06D /* Ruby.framework */; };
-		CE405E80184763D300A77187 /* SUEX_HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */; };
-		CE405E81184763D300A77187 /* RubyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */; };
-		CE405E85184763D300A77187 /* RubyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B618270A4800F7C6E8 /* RubyLib.h */; };
-		CE405E86184763D300A77187 /* RubyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B818270A4800F7C6E8 /* RubyUtils.h */; };
-		CE6B4470211DA18D006A1F2E /* Ruby.Framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6B446F211DA18D006A1F2E /* Ruby.Framework */; };
+		CEEB115A22B2732A00ACE9E3 /* Ruby.Framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6B446F211DA18D006A1F2E /* Ruby.Framework */; };
+		CEEB115D22B28AD000ACE9E3 /* SketchUpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEB115822B26EC000ACE9E3 /* SketchUpAPI.framework */; };
 		E939EB2221120EE20023B67B /* SUEX_HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */; };
 		E939EB2321120EE20023B67B /* RubyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */; };
 		E939EB2821120EE20023B67B /* RubyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B618270A4800F7C6E8 /* RubyLib.h */; };
 		E939EB2921120EE20023B67B /* RubyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B818270A4800F7C6E8 /* RubyUtils.h */; };
-		E9EA8AC81DAFC10D0029551B /* SUEX_HelloWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */; };
-		E9EA8AC91DAFC10D0029551B /* RubyUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */; };
-		E9EA8ACD1DAFC10D0029551B /* RubyLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B618270A4800F7C6E8 /* RubyLib.h */; };
-		E9EA8ACE1DAFC10D0029551B /* RubyUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 33CDE7B818270A4800F7C6E8 /* RubyUtils.h */; };
-		E9EA8AD51DAFC2510029551B /* Ruby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9EA8AD41DAFC2510029551B /* Ruby.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		33CDE5E5182703B200F7C6E8 /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		33CDE7AF182705EB00F7C6E8 /* SUEX_HelloWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SUEX_HelloWorld.cpp; path = src/SUEX_HelloWorld.cpp; sourceTree = "<group>"; };
 		33CDE7B618270A4800F7C6E8 /* RubyLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RubyLib.h; sourceTree = "<group>"; };
 		33CDE7B718270A4800F7C6E8 /* RubyUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RubyUtils.cpp; sourceTree = "<group>"; };
@@ -38,43 +23,19 @@
 		CE1590E518479EAB0084B06D /* SUEX_HelloWorld_exports.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SUEX_HelloWorld_exports.txt; sourceTree = "<group>"; };
 		CE1590E61847A5A20084B06D /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/2.0/Ruby.framework; sourceTree = "<group>"; };
 		CE1590E81847A5F10084B06D /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/1.8/Ruby.framework; sourceTree = "<group>"; };
-		CE405E8A184763D300A77187 /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6B446F211DA18D006A1F2E /* Ruby.Framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Ruby.Framework; sourceTree = "<group>"; };
+		CEEB115822B26EC000ACE9E3 /* SketchUpAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SketchUpAPI.framework; path = "../../../slapi/SDK_Mac_2019-0-752_0/SketchUpAPI.framework"; sourceTree = "<group>"; };
 		E939EB2D21120EE20023B67B /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9EA8AD21DAFC10D0029551B /* SUEX_HelloWorld.bundle */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = SUEX_HelloWorld.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9EA8AD41DAFC2510029551B /* Ruby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ruby.framework; path = ../ThirdParty/lib/mac/2.2/Ruby.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		33CDE5E2182703B100F7C6E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				339559611A0D798C00BB518A /* Ruby.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE405E82184763D300A77187 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE1590E91847A5F10084B06D /* Ruby.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E939EB2421120EE20023B67B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE6B4470211DA18D006A1F2E /* Ruby.Framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9EA8ACA1DAFC10D0029551B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9EA8AD51DAFC2510029551B /* Ruby.framework in Frameworks */,
+				CEEB115D22B28AD000ACE9E3 /* SketchUpAPI.framework in Frameworks */,
+				CEEB115A22B2732A00ACE9E3 /* Ruby.Framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,15 +50,13 @@
 				CE1590E518479EAB0084B06D /* SUEX_HelloWorld_exports.txt */,
 				33CDE7B11827091E00F7C6E8 /* ThirdParty Frameworks */,
 				33CDE5E6182703B200F7C6E8 /* Products */,
+				CEEB115722B26EBF00ACE9E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		33CDE5E6182703B200F7C6E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				33CDE5E5182703B200F7C6E8 /* SUEX_HelloWorld.bundle */,
-				CE405E8A184763D300A77187 /* SUEX_HelloWorld.bundle */,
-				E9EA8AD21DAFC10D0029551B /* SUEX_HelloWorld.bundle */,
 				E939EB2D21120EE20023B67B /* SUEX_HelloWorld.bundle */,
 			);
 			name = Products;
@@ -141,6 +100,14 @@
 			name = "Ruby 1.8";
 			sourceTree = "<group>";
 		};
+		CEEB115722B26EBF00ACE9E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEB115822B26EC000ACE9E3 /* SketchUpAPI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E939EB2E211211400023B67B /* Ruby 2.5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,24 +128,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		33CDE5E3182703B100F7C6E8 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33CDE7B918270A4800F7C6E8 /* RubyLib.h in Headers */,
-				33CDE7BB18270A4800F7C6E8 /* RubyUtils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE405E84184763D300A77187 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE405E85184763D300A77187 /* RubyLib.h in Headers */,
-				CE405E86184763D300A77187 /* RubyUtils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E939EB2721120EE20023B67B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,52 +137,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9EA8ACC1DAFC10D0029551B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9EA8ACD1DAFC10D0029551B /* RubyLib.h in Headers */,
-				E9EA8ACE1DAFC10D0029551B /* RubyUtils.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		33CDE5E4182703B100F7C6E8 /* Ruby 2.0 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 33CDE5E9182703B200F7C6E8 /* Build configuration list for PBXNativeTarget "Ruby 2.0" */;
-			buildPhases = (
-				33CDE5E1182703B100F7C6E8 /* Sources */,
-				33CDE5E2182703B100F7C6E8 /* Frameworks */,
-				33CDE5E3182703B100F7C6E8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Ruby 2.0";
-			productName = "Hello World";
-			productReference = 33CDE5E5182703B200F7C6E8 /* SUEX_HelloWorld.bundle */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-		CE405E7E184763D300A77187 /* Ruby 1.8 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CE405E87184763D300A77187 /* Build configuration list for PBXNativeTarget "Ruby 1.8" */;
-			buildPhases = (
-				CE405E7F184763D300A77187 /* Sources */,
-				CE405E82184763D300A77187 /* Frameworks */,
-				CE405E84184763D300A77187 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Ruby 1.8";
-			productName = "Hello World";
-			productReference = CE405E8A184763D300A77187 /* SUEX_HelloWorld.bundle */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
 		E939EB2021120EE20023B67B /* Ruby 2.5 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E939EB2A21120EE20023B67B /* Build configuration list for PBXNativeTarget "Ruby 2.5" */;
@@ -249,23 +155,6 @@
 			name = "Ruby 2.5";
 			productName = "Hello World";
 			productReference = E939EB2D21120EE20023B67B /* SUEX_HelloWorld.bundle */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-		E9EA8AC61DAFC10D0029551B /* Ruby 2.2 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9EA8ACF1DAFC10D0029551B /* Build configuration list for PBXNativeTarget "Ruby 2.2" */;
-			buildPhases = (
-				E9EA8AC71DAFC10D0029551B /* Sources */,
-				E9EA8ACA1DAFC10D0029551B /* Frameworks */,
-				E9EA8ACC1DAFC10D0029551B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Ruby 2.2";
-			productName = "Hello World";
-			productReference = E9EA8AD21DAFC10D0029551B /* SUEX_HelloWorld.bundle */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -290,47 +179,17 @@
 			projectRoot = "";
 			targets = (
 				E939EB2021120EE20023B67B /* Ruby 2.5 */,
-				E9EA8AC61DAFC10D0029551B /* Ruby 2.2 */,
-				33CDE5E4182703B100F7C6E8 /* Ruby 2.0 */,
-				CE405E7E184763D300A77187 /* Ruby 1.8 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		33CDE5E1182703B100F7C6E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				33CDE7B0182705EB00F7C6E8 /* SUEX_HelloWorld.cpp in Sources */,
-				33CDE7BA18270A4800F7C6E8 /* RubyUtils.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE405E7F184763D300A77187 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CE405E80184763D300A77187 /* SUEX_HelloWorld.cpp in Sources */,
-				CE405E81184763D300A77187 /* RubyUtils.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E939EB2121120EE20023B67B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E939EB2221120EE20023B67B /* SUEX_HelloWorld.cpp in Sources */,
 				E939EB2321120EE20023B67B /* RubyUtils.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E9EA8AC71DAFC10D0029551B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9EA8AC81DAFC10D0029551B /* SUEX_HelloWorld.cpp in Sources */,
-				E9EA8AC91DAFC10D0029551B /* RubyUtils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +201,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "/Applications/SketchUp 2019/SketchUp.app/Contents/MacOS/SketchUp";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -387,6 +247,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "/Applications/SketchUp 2019/SketchUp.app/Contents/MacOS/SketchUp";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -421,76 +282,6 @@
 			};
 			name = Release;
 		};
-		33CDE5EA182703B200F7C6E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Debug (2.0)";
-				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/2.0";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.0\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					../ThirdParty/include/ruby/2.0/mac,
-					"../ThirdParty/include/ruby/2.0/mac/universal-darwin12.5.0",
-				);
-			};
-			name = Debug;
-		};
-		33CDE5EB182703B200F7C6E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Release (2.0)";
-				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/2.0";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.0\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					../ThirdParty/include/ruby/2.0/mac,
-					"../ThirdParty/include/ruby/2.0/mac/universal-darwin12.5.0",
-				);
-			};
-			name = Release;
-		};
-		CE405E88184763D300A77187 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Debug (1.8)";
-				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/1.8";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../ThirdParty/lib/mac/1.8\"",
-				);
-				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/1.8/mac;
-			};
-			name = Debug;
-		};
-		CE405E89184763D300A77187 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Release (1.8)";
-				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/1.8";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../ThirdParty/lib/mac/1.8\"",
-				);
-				HEADER_SEARCH_PATHS = ../ThirdParty/include/ruby/1.8/mac;
-			};
-			name = Release;
-		};
 		E939EB2B21120EE20023B67B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -502,6 +293,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.5\"",
+					"/Users/tthomas2/slapi/SDK_Mac_2019-0-752_0",
 				);
 				HEADER_SEARCH_PATHS = (
 					../ThirdParty/include/ruby/2.5/mac,
@@ -522,50 +314,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.5\"",
+					"/Users/tthomas2/slapi/SDK_Mac_2019-0-752_0",
 				);
 				HEADER_SEARCH_PATHS = (
 					../ThirdParty/include/ruby/2.5/mac,
 					"../ThirdParty/include/ruby/2.5/mac/x86_64-darwin14",
-				);
-				VALID_ARCHS = x86_64;
-			};
-			name = Release;
-		};
-		E9EA8AD01DAFC10D0029551B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Debug (2.2)";
-				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/2.2";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.2\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					../ThirdParty/include/ruby/2.2/mac,
-					"../ThirdParty/include/ruby/2.2/mac/x86_64-darwin14",
-				);
-				VALID_ARCHS = x86_64;
-			};
-			name = Debug;
-		};
-		E9EA8AD11DAFC10D0029551B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/../Release (2.2)";
-				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/2.2";
-				DYLIB_COMPATIBILITY_VERSION = "";
-				DYLIB_CURRENT_VERSION = "";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../ThirdParty/lib/mac/2.2\"",
-				);
-				HEADER_SEARCH_PATHS = (
-					../ThirdParty/include/ruby/2.2/mac,
-					"../ThirdParty/include/ruby/2.2/mac/x86_64-darwin14",
 				);
 				VALID_ARCHS = x86_64;
 			};
@@ -583,38 +336,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		33CDE5E9182703B200F7C6E8 /* Build configuration list for PBXNativeTarget "Ruby 2.0" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				33CDE5EA182703B200F7C6E8 /* Debug */,
-				33CDE5EB182703B200F7C6E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CE405E87184763D300A77187 /* Build configuration list for PBXNativeTarget "Ruby 1.8" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CE405E88184763D300A77187 /* Debug */,
-				CE405E89184763D300A77187 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		E939EB2A21120EE20023B67B /* Build configuration list for PBXNativeTarget "Ruby 2.5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E939EB2B21120EE20023B67B /* Debug */,
 				E939EB2C21120EE20023B67B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E9EA8ACF1DAFC10D0029551B /* Build configuration list for PBXNativeTarget "Ruby 2.2" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9EA8AD01DAFC10D0029551B /* Debug */,
-				E9EA8AD11DAFC10D0029551B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

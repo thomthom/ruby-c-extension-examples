@@ -1,10 +1,16 @@
 #include "RubyUtils/RubyUtils.h"
 
 #include <assert.h>
+#include <string>
 #include <vector>
 
+#ifdef _WIN32
 #define WIN32_LEAN_AND_MEAN 1
 #include "SketchUpAPI/sketchup.h"
+#else
+#import <SketchUpAPI/sketchup.h>
+//#import "SketchUpAPI/sketchup.h"
+#endif
 
 
 #define SU(api_function_call) {\
@@ -31,13 +37,13 @@ std::string GetString(const SUStringRef& string) {
 }
 
 SUModelRef GetActiveModel() {
-  //VALUE sketchup = rb_define_module("Sketchup");
-  //VALUE model = rb_funcall(sketchup, rb_intern("active_model"), 0);
-  //VALUE address = rb_funcall(model, rb_intern("skpdoc"), 1, Qtrue);
-  //return SUModelFromExisting(NUM2SIZET(address));
-  SUModelRef model = SU_INVALID;
-  SU(SUApplicationGetActiveModel(&model));
-  return model;
+  VALUE sketchup = rb_define_module("Sketchup");
+  VALUE model = rb_funcall(sketchup, rb_intern("active_model"), 0);
+  VALUE address = rb_funcall(model, rb_intern("skpdoc"), 1, Qtrue);
+  return SUModelFromExisting(NUM2SIZET(address));
+  //SUModelRef model = SU_INVALID;
+  //SU(SUApplicationGetActiveModel(&model));
+  //return model;
 }
 
 
@@ -58,7 +64,6 @@ VALUE is_section_active() {
   if (num_sections > 0) {
     SU(SUEntitiesGetSectionPlanes(entities, num_sections, sections.data(), &num_sections));
   }
-  SU(SUEntitiesGetSectionPlanes(entities, num_sections, sections.data(), &num_sections));
   
   if (sections.size() > 0) {
     auto section = sections[0];
