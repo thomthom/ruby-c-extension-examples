@@ -149,11 +149,35 @@ VALUE num_triangles() {
   return Qnil;
 }
 
+VALUE get_scene_names() {
+  auto model = GetActiveModel();
+
+  VALUE names = rb_ary_new();
+
+  size_t num_scenes = 0;
+  SU(SUModelGetNumScenes(model, &num_scenes));
+  
+  std::vector<SUSceneRef> scenes(num_scenes, SU_INVALID);
+  SU(SUModelGetScenes(model, num_scenes, scenes.data(), &num_scenes));
+
+  for (const auto& scene : scenes) {
+    SUStringRef name_ref = SU_INVALID;
+    SU(SUStringCreate(&name_ref));
+    SU(SUSceneGetName(scene, &name_ref));
+    auto name = GetString(name_ref);
+    rb_ary_push(names, GetRubyInterface(name.c_str()));
+    SU(SUStringRelease(&name_ref));
+  }
+
+  return names;
+}
+
 // Load this module from Ruby using:
 //   require 'SUEX_HelloWorld'
 //   SUEX_HelloWorld.is_section_active?
 //   SUEX_HelloWorld.is_face_complex?
 //   SUEX_HelloWorld.num_triangles
+//   SUEX_HelloWorld.scene_names
 extern "C"
 void Init_SUEX_HelloWorld()
 {
@@ -172,4 +196,7 @@ void Init_SUEX_HelloWorld()
 
   rb_define_module_function(mSUEX_HelloWorld, "num_triangles",
                             VALUEFUNC(num_triangles), 0);
+
+  rb_define_module_function(mSUEX_HelloWorld, "scene_names",
+                            VALUEFUNC(get_scene_names), 0);
 }
