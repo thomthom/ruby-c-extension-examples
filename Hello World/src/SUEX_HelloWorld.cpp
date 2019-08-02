@@ -188,12 +188,38 @@ VALUE symbols_test() {
   return Qnil;
 }
 
+VALUE get_selection_hack() {
+  VALUE mSketchup = rb_const_get(rb_cObject, rb_intern("Sketchup"));
+  VALUE model = rb_funcall(mSketchup, rb_intern("active_model"), 0);
+
+  VALUE selection = rb_funcall(model, rb_intern("selection"), 0);
+  size_t sel_size = NUM2SIZET(rb_funcall(selection, rb_intern("size"), 0));
+
+  VALUE ids = rb_ary_new_capa(static_cast<long>(sel_size));
+
+  std::vector<SUEntityRef> entities(sel_size, SU_INVALID);
+  for (size_t i = 0; i < sel_size; i++) {
+    VALUE entity = rb_funcall(selection, rb_intern("at"), 1, SIZET2NUM(i));
+    assert(TYPE(entity) == T_DATA);
+    void* data = DATA_PTR(entity);
+    entities[i].ptr = data;
+    assert(SUIsValid(entities[i]));
+    int32_t id = 0;
+    SU(SUEntityGetID(entities[i], &id));
+    rb_ary_push(ids, INT2NUM(id));
+  }
+
+  return ids;
+}
+
+
 // Load this module from Ruby using:
 //   require 'SUEX_HelloWorld'
 //   SUEX_HelloWorld.is_section_active?
 //   SUEX_HelloWorld.is_face_complex?
 //   SUEX_HelloWorld.num_triangles
 //   SUEX_HelloWorld.scene_names
+//   SUEX_HelloWorld.get_selection
 extern "C"
 void Init_SUEX_HelloWorld()
 {
@@ -218,4 +244,7 @@ void Init_SUEX_HelloWorld()
 
   rb_define_module_function(mSUEX_HelloWorld, "symbols",
                             VALUEFUNC(symbols_test), 0);
+
+  rb_define_module_function(mSUEX_HelloWorld, "get_selection",
+                            VALUEFUNC(get_selection_hack), 0);
 }
