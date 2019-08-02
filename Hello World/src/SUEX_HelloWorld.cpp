@@ -172,6 +172,22 @@ VALUE get_scene_names() {
   return names;
 }
 
+VALUE symbols_test() {
+  SUMaterialRef material = SU_INVALID;
+  SUMaterialGetColorizeType(material, nullptr);
+
+  SUTextureRef texture = SU_INVALID;
+  SUTextureWriteOriginalToFile(texture, nullptr);
+
+  SUModelRef model = SU_INVALID;
+  size_t count = 0;
+  SUModelGetNumImageDefinitions(model, nullptr);
+
+  SUModelGetImageDefinitions(model, count, nullptr, nullptr);
+
+  return Qnil;
+}
+
 // Load this module from Ruby using:
 //   require 'SUEX_HelloWorld'
 //   SUEX_HelloWorld.is_section_active?
@@ -199,4 +215,7 @@ void Init_SUEX_HelloWorld()
 
   rb_define_module_function(mSUEX_HelloWorld, "scene_names",
                             VALUEFUNC(get_scene_names), 0);
+
+  rb_define_module_function(mSUEX_HelloWorld, "symbols",
+                            VALUEFUNC(symbols_test), 0);
 }
