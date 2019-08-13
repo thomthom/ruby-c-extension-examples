@@ -149,11 +149,50 @@ VALUE num_triangles() {
   return Qnil;
 }
 
+VALUE image_definition_name() {
+  auto model = GetActiveModel();
+
+  SUEntitiesRef entities = SU_INVALID;
+  SU(SUModelGetEntities(model, &entities));
+
+  size_t num_images = 0;
+  SU(SUEntitiesGetNumImages(entities, &num_images));
+
+  std::vector<SUImageRef> images(num_images, SU_INVALID);
+  if (num_images > 0) {
+    SU(SUEntitiesGetImages(entities, num_images, images.data(), &num_images));
+  }
+
+  VALUE names = rb_ary_new();
+
+  for (const auto& image : images) {
+    // This won't work, SUComponentInstanceFromEntity will filter out groups
+    // and image instances:
+    //SUEntityRef entity = SUImageToEntity(image);
+    //SUComponentInstanceRef instance = SUComponentInstanceFromEntity(entity);
+    // HACK! Clean this up once the SU C API have better cast support between
+    //       instance types.
+    SUComponentInstanceRef instance = { image.ptr };
+    assert(SUIsValid(instance));
+    SUComponentDefinitionRef definition = SU_INVALID;
+    SU(SUComponentInstanceGetDefinition(instance, &definition));
+    SUStringRef name_ref = SU_INVALID;
+    SU(SUStringCreate(&name_ref));
+    SU(SUComponentDefinitionGetName(definition, &name_ref));
+    auto name = GetString(name_ref);
+    SU(SUStringRelease(&name_ref));
+    rb_ary_push(names, GetRubyInterface(name.c_str()));
+  }
+
+  return names;
+}
+
 // Load this module from Ruby using:
 //   require 'SUEX_HelloWorld'
 //   SUEX_HelloWorld.is_section_active?
 //   SUEX_HelloWorld.is_face_complex?
 //   SUEX_HelloWorld.num_triangles
+//   SUEX_HelloWorld.image_definition_name
 extern "C"
 void Init_SUEX_HelloWorld()
 {
@@ -172,4 +211,7 @@ void Init_SUEX_HelloWorld()
 
   rb_define_module_function(mSUEX_HelloWorld, "num_triangles",
                             VALUEFUNC(num_triangles), 0);
+
+  rb_define_module_function(mSUEX_HelloWorld, "image_definition_name",
+                            VALUEFUNC(image_definition_name), 0);
 }
