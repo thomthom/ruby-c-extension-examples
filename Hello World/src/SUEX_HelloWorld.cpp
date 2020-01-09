@@ -185,6 +185,9 @@ VALUE symbols_test() {
 
   SUModelGetImageDefinitions(model, count, nullptr, nullptr);
 
+  SUModelGetNumAllMaterials(model, nullptr);
+  SUModelGetAllMaterials(model, 0, nullptr, nullptr);
+
   return Qnil;
 }
 
@@ -213,6 +216,30 @@ VALUE get_selection_hack() {
 }
 
 
+VALUE get_all_material_names() {
+  auto model = GetActiveModel();
+
+  VALUE names = rb_ary_new();
+
+  size_t num_materials = 0;
+  SU(SUModelGetNumAllMaterials(model, &num_materials));
+
+  std::vector<SUMaterialRef> materials(num_materials, SU_INVALID);
+  SU(SUModelGetAllMaterials(model, num_materials, materials.data(), &num_materials));
+
+  for (const auto& material : materials) {
+    SUStringRef name_ref = SU_INVALID;
+    SU(SUStringCreate(&name_ref));
+    SU(SUMaterialGetName(material, &name_ref));
+    auto name = GetString(name_ref);
+    rb_ary_push(names, GetRubyInterface(name.c_str()));
+    SU(SUStringRelease(&name_ref));
+  }
+
+  return names;
+}
+
+
 // Load this module from Ruby using:
 //   require 'SUEX_HelloWorld'
 //   SUEX_HelloWorld.is_section_active?
@@ -220,6 +247,7 @@ VALUE get_selection_hack() {
 //   SUEX_HelloWorld.num_triangles
 //   SUEX_HelloWorld.scene_names
 //   SUEX_HelloWorld.get_selection
+//   SUEX_HelloWorld.all_material_names
 extern "C"
 void Init_SUEX_HelloWorld()
 {
@@ -247,4 +275,7 @@ void Init_SUEX_HelloWorld()
 
   rb_define_module_function(mSUEX_HelloWorld, "get_selection",
                             VALUEFUNC(get_selection_hack), 0);
+
+  rb_define_module_function(mSUEX_HelloWorld, "all_material_names",
+                            VALUEFUNC(get_all_material_names), 0);
 }
