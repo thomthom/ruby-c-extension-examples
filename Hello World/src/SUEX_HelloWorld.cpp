@@ -20,11 +20,6 @@ assert(SU_ERROR_NONE == su_api_result);\
 #define refute(condition) assert(!(condition))
 
 
-//extern "C" {
-//SU_RESULT SUApplicationGetActiveModel(SUModelRef* model);
-//}
-
-
 std::string GetString(const SUStringRef& string) {
   size_t length = 0;
   SU(SUStringGetUTF8Length(string, &length));
@@ -36,10 +31,6 @@ std::string GetString(const SUStringRef& string) {
 }
 
 SUModelRef GetActiveModel() {
-  //VALUE sketchup = rb_define_module("Sketchup");
-  //VALUE model = rb_funcall(sketchup, rb_intern("active_model"), 0);
-  //VALUE address = rb_funcall(model, rb_intern("skpdoc"), 1, Qtrue);
-  //return SUModelFromExisting(NUM2SIZET(address));
   SUModelRef model = SU_INVALID;
   SU(SUApplicationGetActiveModel(&model));
   return model;
