@@ -1,7 +1,7 @@
 #ifndef INCLUDE_RUBY_CONFIG_H
 #define INCLUDE_RUBY_CONFIG_H 1
-#if (_MSC_VER < 1920)
-#error MSC version unmatch: 1920 or greater expected.
+#if (_MSC_VER < 1940)
+#error MSC version unmatch: 1940 or greater expected.
 #endif
 #define RUBY_MSVCRT_VERSION 140
 //#define _WIN32_WINNT _WIN32_WINNT_WIN8
